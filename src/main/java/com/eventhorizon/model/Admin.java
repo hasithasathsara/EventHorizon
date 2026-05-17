@@ -19,6 +19,7 @@ public class Admin extends User {
         setAdminPermission(adminPermission);
     }
 
+
     public Admin() {
         super();
         this.adminPermission = CORE_ADMIN;
@@ -42,13 +43,32 @@ public class Admin extends User {
         String normalized = adminPermission.trim().toUpperCase();
         switch (normalized) {
             case CORE_ADMIN:
+                this.adminPermission=normalized;
+                break;
             case EVENTS_BOOKINGS_REQUEST_ADMIN:
+                this.adminPermission=normalized;
+                break;
             case EVENTS_ONLY:
+                this.adminPermission=normalized;
+                break;
             case BOOKINGS_ONLY:
-                this.adminPermission = normalized;
+                this.adminPermission=normalized;
                 break;
             default:
                 this.adminPermission = CORE_ADMIN;
+        }
+    }
+
+    public String getPermissionLabel() {
+        switch (adminPermission) {
+            case EVENTS_BOOKINGS_REQUEST_ADMIN:
+                return "Events + Bookings + New Admin Requests";
+            case EVENTS_ONLY:
+                return "Events only";
+            case BOOKINGS_ONLY:
+                return "Bookings only";
+            default:
+                return "Core Admin";
         }
     }
 
@@ -73,16 +93,4 @@ public class Admin extends User {
         return CORE_ADMIN.equals(adminPermission);
     }
 
-    public String getPermissionLabel() {
-        switch (adminPermission) {
-            case EVENTS_BOOKINGS_REQUEST_ADMIN:
-                return "Events + Bookings + New Admin Requests";
-            case EVENTS_ONLY:
-                return "Events only";
-            case BOOKINGS_ONLY:
-                return "Bookings only";
-            default:
-                return "Core Admin";
-        }
-    }
 }
