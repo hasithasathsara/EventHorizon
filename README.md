@@ -26,6 +26,7 @@
 
 ## Table of Contents
 
+- [Project Showcase](#project-showcase)
 - [Overview](#overview)
 - [Live Deployment](#live-deployment)
 - [Technology Stack](#technology-stack)
@@ -44,6 +45,29 @@
 - [Project Highlights](#project-highlights)
 - [Future Improvements](#future-improvements)
 - [Status](#status)
+
+---
+## 📸 Project Showcase
+
+Experience the professional interface of EventHorizon. Each module is designed with user experience and administrative efficiency in mind.
+
+### 1. Customer Experience
+*Browse and book events seamlessly through our dedicated customer portal.*
+
+| Home Page | Event Discovery |
+|---|---|
+| ![Home Page](documents/home-page.png) | ![Browse Events](documents/browse-events.png) |
+
+| My Bookings & Tickets | Customer Support |
+|---|---|
+| ![My Bookings](documents/my-bookings.png) | ![Report Issue](documents/report-issue.png) |
+
+### 2. Administrative Control
+*Comprehensive dashboard for event management and payment verification.*
+
+| Admin Dashboard | Event Management |
+|---|---|
+| ![Admin Dashboard](documents/admin-dashboard.png) | ![Manage Events](documents/manage-events.png) |
 
 ---
 
